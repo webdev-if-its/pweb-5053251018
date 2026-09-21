@@ -10,6 +10,8 @@ body {
 /* Level 1 */
 .kartu-flex {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .kartu {
@@ -25,24 +27,37 @@ body {
 
 /* Level 4 */
 .tata-letak {
+
+display: flex;
+
 }
 
 .sidebar {
   background-color: #f0f0f0;
+  box-sizing: border-box;
   padding: 1rem;
+  flex: 0 0 250px;
 }
 
 .konten {
   background-color: #ffffff;
   padding: 1rem;
+  flex: 1;
 }
 
 /* Level 5 */
 .info-kontak {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
+
 
 /* Level 6 */
 .kisi {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 .kartu-grid {
@@ -52,9 +67,16 @@ body {
 }
 
 /* Level 7 */
+/* jarak antar kartu lewat gap di .kisi (sudah di atas),
+   jadi .kartu-grid tidak boleh punya margin */
 
 /* Level 8 */
+.unggulan {
+  grid-column: span 2;
+}
 
-/* Level 9
+/* Level 9 */
+/* repeat() + minmax() sudah dipakai di .kisi di atas */
 
-   Level 10 */
+/* Level 10 */
+/* auto-fill membuat jumlah kolom menyesuaikan lebar layar, tanpa @media */
