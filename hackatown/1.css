@@ -1,0 +1,140 @@
+:root {
+  --navy: #2b2d6e;
+  --kuning: #fbbf3c;
+  --abu: #f3f3f5;
+  --teks: #111111;
+  --teks-abu: #555555;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--teks);
+  font-size: 1rem;
+}
+
+img { display: block; max-width: 100%; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+.menu a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+.menu a:hover { text-decoration: underline; }
+
+.aksi { display: flex; align-items: center; gap: 1.5rem; }
+
+.tombol-keranjang {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--abu);
+}
+
+.tombol {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.tombol-gelap  { background: var(--navy);   color: #fff; }
+.tombol-abu    { background: var(--abu);    color: var(--navy); }
+.tombol-kuning { background: var(--kuning); color: var(--navy); }
+
+.tombol:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 2px;
+}
+
+.tombol-grup { display: flex; gap: 0.75rem; }
+
+.deskripsi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.deskripsi-teks h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin: 0 0 1.5rem;
+}
+
+.deskripsi-teks p {
+  color: var(--teks-abu);
+  line-height: 1.6;
+  max-width: 30rem;
+}
+
+.tombol-grup { margin: 2rem 0 3rem; }
+
+.bukti { display: flex; align-items: center; gap: 1rem; }
+.bukti p { margin: 0; max-width: 14rem; font-size: 0.875rem; }
+
+.avatar-grup { display: flex; }
+.avatar-grup img,
+.badge {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.avatar-grup { margin-left: 1rem; }   
+.badge {
+  display: grid;
+  place-items: center;
+  background: var(--navy);
+  color: var(--kuning);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.kolase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.kolase-kolom {
+  display: flex;
+  flex-direction: column;   
+  gap: 0.15rem;
+}
+
+.kolase-kolom img {
+  width: 100%;
+  object-fit: cover;         
+}
+.pendek { height: 7.5rem; }
+.sedang { height: 9rem; }
+.tinggi { height: 15rem; }
+/* ---------- section bawah ---------- */
+.fitur {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem 4rem;
+}
+.fitur h2 { font-size: 2.25rem; line-height: 1.2; }

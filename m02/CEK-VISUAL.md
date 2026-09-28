@@ -12,6 +12,7 @@ per mahasiswa.
       (padding) DAN garis tepi (border) DAN jarak dari elemen sekitarnya
       (margin) — ketiganya terlihat berbeda, bukan cuma satu yang terasa?
 
+![]()
 ## Level 4 — border-box (dua tangkapan layar)
 
 Ini level yang secara eksplisit minta perbandingan visual:
